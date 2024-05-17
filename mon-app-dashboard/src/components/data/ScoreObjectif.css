@@ -1,0 +1,14 @@
+.containerScore {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22%;
+    padding-top: 3%;
+   
+}
+
+.bground{
+ background-color: #FBFBFB;
+    width: 258px;
+    height: 263px;
+
+}

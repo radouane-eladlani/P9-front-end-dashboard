@@ -1,0 +1,14 @@
+.containerRadar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22%;
+    padding-top: 3%;
+   
+}
+
+.bground{
+ background-color: #FBFBFB;
+    max-width: 258px;
+    max-height: 263px;
+
+}

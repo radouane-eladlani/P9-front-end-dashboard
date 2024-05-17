@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner.jsx";
 import "./PageAccueil.css";
 import Navbar from "../components/Navbar.jsx";
+import Contenu from "../components/Contenu.jsx";
 
 
 /*la function app permet de 
@@ -12,8 +13,8 @@ App pour les afficher sur la page */
   return (
     <>
       <Navbar />
+      <Contenu />
       <Banner />
-
     </>
   );
 }

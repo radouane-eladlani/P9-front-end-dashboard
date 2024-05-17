@@ -15,8 +15,6 @@ function Banner() {
 
                 <p> Copiryght, SportSee 2020</p>
             </div>
-
-
         </div>
     );
 }

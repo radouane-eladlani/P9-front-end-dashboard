@@ -1,0 +1,15 @@
+.containerSession {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+
+}
+
+
+.bground {
+    background-color: #FBFBFB;
+    width: 258px;
+    height: 263px;
+    border-radius: 5px;
+
+}

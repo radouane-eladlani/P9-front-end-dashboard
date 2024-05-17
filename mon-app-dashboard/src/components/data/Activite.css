@@ -1,0 +1,17 @@
+.containerActivite {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-top: 3%;
+    
+}
+.bgroundActivite{
+    background-color: #FBFBFB;
+width: 835px;
+    height: 320px;
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+.containerActivite h3 {
+    margin-top: 5px;
+}
