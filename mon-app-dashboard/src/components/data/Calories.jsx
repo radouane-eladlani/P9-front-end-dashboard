@@ -6,7 +6,7 @@ function Calories() {
     return (
         <div className="bgroundNutrition">
             <div className="center">
-                <img src="../../assets/calories-icon.png" alt="logo calories" />
+                <img src={require("../../assets/calories-icon.png")} alt="logo calories" />
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">

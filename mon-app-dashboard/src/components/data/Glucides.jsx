@@ -6,7 +6,7 @@ function Glucides() {
     return (
         <div className="bgroundNutrition">
             <div className="center">
-                <img src="../../assets/carbs-icon.png" alt="Logo glucides" />
+                <img src={require("../../assets/carbs-icon.png")} alt="Logo glucides" />
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">

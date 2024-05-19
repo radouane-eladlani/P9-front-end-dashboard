@@ -6,7 +6,7 @@ function Lipides() {
     return (
         <div className="bgroundNutrition">
             <div className="center">
-                <img src="../../assets/fat-icon.png" alt="Logo lipides" />
+                <img src={require("../../assets/fat-icon.png")} alt="Logo lipides" />
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">

@@ -1,19 +1,17 @@
 .bgroundNutrition {
     display: flex;
-    justify-content: center;
     background-color: #FBFBFB;
     height: 124px;
     width: 258px;
     margin-bottom: 37px;
     border-radius: 5px;
+    align-items: center;
 }
 
 .center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    padding-left: 40px;
 }
 
 .center img {

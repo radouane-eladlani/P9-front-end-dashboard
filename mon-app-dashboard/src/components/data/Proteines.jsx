@@ -6,18 +6,18 @@ function Proteines() {
     return (
         <div className="bgroundNutrition">
             <div className="center">
-                <img src="../../assets/protein-icon.png" alt="Logo proteines" />
+                <img src={require("../../assets/protein-icon.png")} alt="Logo proteines" />
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">
                     <span>155g</span>
-                <p>Protéines</p>
+                    <p>Protéines</p>
                 </div>
-                
+
             </div>
 
         </div>
-       
+
     );
 }
 export default Proteines;

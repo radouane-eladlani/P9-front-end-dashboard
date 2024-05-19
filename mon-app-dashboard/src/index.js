@@ -4,6 +4,7 @@ import './index.css';
 import PageAccueil from './page/PageAccueil';
 import reportWebVitals from './reportWebVitals';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
