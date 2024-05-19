@@ -2,22 +2,41 @@
     color: red;
 }
 
-.container {
+.titre {
     display: flex;
     flex-direction: column;
-    padding-left: 15%;
-    padding-top: 3%;
-    width: max-content;
+    position: absolute;
+    left: 15%;
+    bottom: 67%;
 }
 
-.container h2{
+.titre h2{
     margin-top: 5px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    width: 100%;
+    padding-right: 25px;
+}
+
+.containerGlobal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: max-content; 
+    position: absolute;
+    left: 15%;
+    top: 33%;  
+}
 
 .flexbox {
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-start; 
+    gap:30px;
+    width: max-content;
 }
 
 .flexbox > div {
@@ -25,6 +44,10 @@
     text-align: center;
 }
 
-.widthFlex{
-    width: 100%;
+.flexbox2 {
+   height: 575px;
+}
+.activity {
+    width: max-content;
+    
 }
