@@ -3,15 +3,94 @@
     flex-direction: column;
     padding-left: 4%;
     padding-top: 3%;
-    
 }
-.bgroundActivite{
+
+.bgroundActivite {
     background-color: #FBFBFB;
-width: 835px;
+    width: 835px;
     height: 320px;
     margin-bottom: 3%;
     border-radius: 5px;
 }
+
 .containerActivite h3 {
     margin-top: 5px;
+}
+
+.Container {
+    background-color: #E60000;
+    width: 55px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Text {
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 24px;
+    margin-top: 7px;
+}
+
+.Wrapper {
+    margin-bottom: 2em;
+    width: 785px;
+    border-radius: 5px;
+    background: #FBFBFB;
+    padding: 25px;
+}
+
+.Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.Title {
+    font-size: 15px;
+    line-height: 24px;
+    color: #20253A;
+}
+
+.Text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #74798c;
+    margin-left: 10px;
+}
+
+.IconCalories  {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color:rgb(230, 0, 0);
+    align-self: center;
+    margin-left: 30px;
+    position: relative;
+    bottom: -3px
+}
+.IconPoids{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color:rgb(40, 45, 48);
+    align-self: center;
+    margin-left: 30px;
+    position: relative;
+    bottom: -3px
+}
+
+
+.Legend {
+    display: flex;
+    align-items: center;
+}
+
+.Info {
+    display: flex;
+    align-items: center;
 }
