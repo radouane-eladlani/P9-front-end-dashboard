@@ -9,6 +9,7 @@ import Proteines from "./data/Proteines";
 import Glucides from "./data/Glucides";
 import Lipides from "./data/Lipides";
 import useFetch from "../utils/useFetch";
+import UserModel from "../model/UserModel";
 
 function Contenu() {
     const [userData, setUserData] = useState(null);
@@ -16,7 +17,8 @@ function Contenu() {
 
     useEffect(() => {
         if (data) {
-            setUserData(data.data);
+            
+            setUserData(new UserModel(data));
         }
     }, [data]);
 
@@ -28,7 +30,12 @@ function Contenu() {
         return <div>Erreur : {error}</div>;
     }
 
-    const firstName = userData ? userData.userInfos.firstName : "";
+    const firstName = userData ? userData.firstName : "";
+    const calories = userData ? userData.calorieCount : 0;
+    const proteines = userData ? userData.proteinCount : 0;
+    const glucides = userData ? userData.carbohydrateCount : 0;
+    const lipides = userData ? userData.lipidCount : 0;
+
 
     return (
         <>
@@ -48,10 +55,10 @@ function Contenu() {
                     </div>
                 </div>
                 <div className="flexbox2">
-                    <Calories />
-                    <Proteines />
-                    <Glucides />
-                    <Lipides />
+                <Calories calories={calories} />
+                    <Proteines proteines={proteines} />
+                    <Glucides glucides={glucides} />
+                    <Lipides lipides={lipides} />
                 </div>
             </div>
         </>

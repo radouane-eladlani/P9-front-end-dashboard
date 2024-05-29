@@ -19,19 +19,19 @@
 
 .Container {
     background-color: #E60000;
-    width: 55px;
-    height: 75px;
+    width: 39px;
+    height: 63px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .Text {
-    color: white;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 7px;
+    color: white;
     line-height: 24px;
-    margin-top: 7px;
 }
 
 .Wrapper {
@@ -47,7 +47,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
-    margin-right: 1.5rem;
 }
 
 .Title {
@@ -56,32 +55,20 @@
     color: #20253A;
 }
 
-.Text {
-    font-weight: 500;
-    font-size: 14px;
-    color: #74798c;
-    margin-left: 10px;
-}
 
 .IconCalories  {
     height: 8px;
     width: 8px;
     border-radius: 50%;
-    background-color:rgb(230, 0, 0);
-    align-self: center;
-    margin-left: 30px;
-    position: relative;
-    bottom: -3px
+    background-color: #E60000;
+    margin: 8px 8px 8px 30px;
 }
 .IconPoids{
     height: 8px;
     width: 8px;
     border-radius: 50%;
-    background-color:rgb(40, 45, 48);
-    align-self: center;
-    margin-left: 30px;
-    position: relative;
-    bottom: -3px
+    background-color:#282D30;
+    margin: 8px;
 }
 
 
@@ -90,7 +77,24 @@
     align-items: center;
 }
 
+.TextLegend{
+
+    font-weight: 500;
+    font-size: 14px;
+    color: #9B9EAC;
+    line-height: 24px;
+}
+
 .Info {
     display: flex;
     align-items: center;
+}
+.active {
+    visibility: visible;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: transform 401ms ease 0s;
+    transform: translate(400.5px, -26px);
 }

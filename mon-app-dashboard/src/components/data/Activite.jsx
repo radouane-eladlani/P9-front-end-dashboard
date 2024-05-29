@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from 'prop-types';
 import "./Activite.css";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import useFetch from "../../utils/useFetch";
+import ActiviteModel from "../../model/ActiviteModel";
 
 const xAxisStyle = {
     tickLine: false,
@@ -37,11 +37,12 @@ function Activite() {
 
     useEffect(() => {
         if (data) {
-            const transformedSessions = data.data.sessions.map((session, index) => ({
+            const sessions = new ActiviteModel(data).data;
+            const dataSessions = sessions.map((session, index) => ({
                 ...session,
                 dayNumber: index + 1 
             }));
-            setSessions(transformedSessions);
+            setSessions(dataSessions);
         }
     }, [data]);
 
@@ -60,11 +61,11 @@ function Activite() {
                 <div className="Legend">
                     <div className="Info">
                         <div className="IconPoids" />
-                        <div className="Text">Poids (kg)</div>
+                        <div className="TextLegend">Poids (kg)</div>
                     </div>
                     <div className="Info">
                         <div className="IconCalories" />
-                        <div className="Text">Calories brûlées (kCal)</div>
+                        <div className="TextLegend">Calories brûlées (kCal)</div>
                     </div>
                 </div>
             </div>

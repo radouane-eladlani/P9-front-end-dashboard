@@ -1,8 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./Nutrition.css";
 
-/* la function  permet de retourner le composant  avec le style */
-function Calories() {
+function Calories({ calories }) {
     return (
         <div className="bgroundNutrition">
             <div className="center">
@@ -10,14 +10,16 @@ function Calories() {
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">
-                    <span>1,930kCal</span>
-                <p>Calories</p>
+                    <span>{calories.toLocaleString()} kCal</span>
+                    <p>Calories</p>
                 </div>
-                
             </div>
-
         </div>
-
     );
 }
+
+Calories.propTypes = {
+    calories: PropTypes.number.isRequired
+};
+
 export default Calories;
