@@ -6,9 +6,7 @@
     justify-content: space-evenly;
     text-align: center;
     height: 1024px;
-    position: absolute;
-    top : 11%;
-    width: 117px;
+    
     
 }
 
@@ -27,6 +25,8 @@
 }
 .width{
     width: 117px;
+    position: relative;
+    top: -1px;
 }
 
 .flexBox {

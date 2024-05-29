@@ -17,26 +17,27 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding-top: 3%;
-    width: 100%;
-    padding-right: 25px;
+    width: 75%;
 }
 
 .containerGlobal {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: max-content; 
+    width: max-content;
     position: absolute;
     left: 15%;
-    top: 33%;  
+    top: 29%;
+    width: 82%;
+    height: 90%;
 }
 
 .flexbox {
     display: flex;
-    justify-content: flex-start; 
-    gap:30px;
-    width: max-content;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 95%;
+    height: 263px;
 }
 
 .flexbox > div {
@@ -45,9 +46,8 @@
 }
 
 .flexbox2 {
-   height: 575px;
+   height: 606px;
 }
 .activity {
-    width: max-content;
-    
+    width: 95%;
 }

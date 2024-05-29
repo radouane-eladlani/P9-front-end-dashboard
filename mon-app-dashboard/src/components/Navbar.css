@@ -2,16 +2,13 @@
     width: 150px;
     height: 52px;
 }
-.navbar_logo{
-    position: absolute;
-    left: 3%;
-}
+
 
 .navbar {
     background-color: black; 
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 91px;
     width: 100%;
