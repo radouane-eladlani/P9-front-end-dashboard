@@ -42,11 +42,11 @@
 
 .flexbox > div {
     flex: 1; 
-    text-align: center;
 }
 
 .flexbox2 {
    height: 606px;
+   width: 25%;
 }
 .activity {
     width: 95%;

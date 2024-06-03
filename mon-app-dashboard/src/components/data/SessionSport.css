@@ -1,19 +1,52 @@
-.containerSession {
+.bgroundRed {
+    background-color: red;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .containerSession {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-
-}
-
-
-.bgroundRed {
-    background-color: #e60000;
-    width: 258px;
-    height: 263px;
-    border-radius: 5px;
-}
-.containerSession h3 {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    margin-bottom: 20px;
     text-align: left;
-    margin-left: 30px;
+    width: 75%;
+  }
+  
+  .custom-tooltip {
+    background-color: white;
+    padding: 5px;
+    
+  }
+  
+  .custom-tooltip .label {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .recharts-wrapper {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    width: 20%;
-}
+  }
+  .backgroundOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .recharts-curve.recharts-tooltip-cursor {
+    stroke: none ;
+  }
