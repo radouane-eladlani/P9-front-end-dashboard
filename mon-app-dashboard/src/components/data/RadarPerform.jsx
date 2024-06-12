@@ -26,11 +26,11 @@ function RadarPerform() {
   return (
     <div className="bgroundRadar">
       <div className="containerRadar">
-        <ResponsiveContainer width="100%" height="100%" >
-          <RadarChart cx="50%" cy="50%" outerRadius="60%" data={dataPerform}>
-            <PolarGrid stroke="#fff" polarRadius={[10, 20, 35, 50, 65]} radialLines={false} gridType='polygon' />
-            <PolarAngleAxis dataKey="kind" tick={{ fill: '#fff', fontSize: 12 }}  />
-            <PolarRadiusAxis stroke="none" domain={[0, 250]} />
+        <ResponsiveContainer width="100%" height="100%">
+          <RadarChart cx="50%" cy="50%" outerRadius="50%" data={dataPerform}>
+            <PolarGrid stroke="#fff" />
+            <PolarAngleAxis dataKey="kind" tick={{ fill: '#fff', fontSize: 12 }} />
+            <PolarRadiusAxis stroke="none" />
             <Radar name="Performance" dataKey="value" stroke="#FF0101" fill="#FF0101" fillOpacity={0.7} />
           </RadarChart>
         </ResponsiveContainer>
@@ -40,6 +40,4 @@ function RadarPerform() {
 }
 
 export default RadarPerform;
-
-
 

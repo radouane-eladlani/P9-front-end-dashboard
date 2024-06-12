@@ -10,7 +10,7 @@ function Glucides({ glucides }) {
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">
-                    <span>{glucides.toLocaleString()} g</span>
+                    <span>{glucides.toLocaleString()}g</span>
                     <p>Glucides</p>
                 </div>
             </div>

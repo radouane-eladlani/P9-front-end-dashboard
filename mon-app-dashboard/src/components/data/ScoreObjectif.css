@@ -1,14 +1,54 @@
-.containerScore {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    padding-top: 3%;
-   
+.bground {
+  background-color: #FBFBFB;
+  width: 258px;
+  height: 263px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 
-.bground{
- background-color: #FBFBFB;
-    width: 258px;
-    height: 263px;
+.containerScore {
+  position: relative;
+  width: 260px;
+  height: 263px;
+  width: 100%;
+}
 
+.containerScore h3 {
+  color: black;
+  margin: 0px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.scoreText {
+  position: absolute;
+  top: 144px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  padding: 21px;
+}
+
+.scoreText p {
+  margin: 3px;
+}
+
+.scoreText p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.scoreText p:last-child {
+  font-size: 14px;
+  color: #666;
 }

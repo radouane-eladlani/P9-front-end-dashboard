@@ -10,8 +10,8 @@ function Proteines({ proteines }) {
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">
-                    <span>{proteines.toLocaleString()} g</span>
-                    <p>Protéines</p>
+                    <span>{proteines.toLocaleString()}g</span>
+                    <p>Proteines</p>
                 </div>
             </div>
         </div>

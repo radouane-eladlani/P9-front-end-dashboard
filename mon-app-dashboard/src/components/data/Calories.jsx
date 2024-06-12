@@ -10,7 +10,7 @@ function Calories({ calories }) {
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">
-                    <span>{calories.toLocaleString()} kCal</span>
+                    <span>{calories.toLocaleString()}kCal</span>
                     <p>Calories</p>
                 </div>
             </div>

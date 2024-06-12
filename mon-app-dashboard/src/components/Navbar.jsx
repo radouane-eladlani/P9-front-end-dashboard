@@ -16,7 +16,7 @@ function Navbar() {
 
             <span> Réglage</span>
 
-            <span> Communaute</span>
+            <span> Communauté</span>
             
         </nav>
     );
