@@ -27,7 +27,7 @@ function Contenu() {
     }
 
     if (error) {
-        return <div>Erreur : {error}</div>;
+        return <div className="erreur">Erreur : {error}</div>;
     }
 
     const firstName = userData ? userData.firstName : "";

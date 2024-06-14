@@ -51,3 +51,8 @@
 .activity {
     width: 95%;
 }
+
+.erreur{
+    left: 150px;
+    margin-top: 20px;
+    position: absolute;}

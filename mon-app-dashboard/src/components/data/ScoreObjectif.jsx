@@ -31,7 +31,6 @@ function ScoreObjectif() {
         <h3>Score</h3>
         <ResponsiveContainer width="100%" height={200}>
           <PieChart>
-            {/* Diagramme des données réelles */}
             <Pie
               data={dataScore}
               startAngle={90}
