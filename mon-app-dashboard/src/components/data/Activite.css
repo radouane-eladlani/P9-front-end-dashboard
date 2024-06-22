@@ -19,7 +19,7 @@
 
 .Container {
     background-color: #E60000;
-    width: 39px;
+    width: 45px;
     height: 63px;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 
 .Text {
     font-weight: 500;
-    font-size: 7px;
+    font-size: 11px;
     color: white;
     line-height: 24px;
 }

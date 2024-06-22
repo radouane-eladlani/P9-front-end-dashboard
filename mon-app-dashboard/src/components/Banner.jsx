@@ -13,7 +13,7 @@ function Banner() {
                     <img src={require("../assets/icon_4.png")} alt=" icon musculation" />
                 </div>
                 <div>
-                                    <p> Copiryght, SportSee 2020</p>
+                    <p> Copiryght, SportSee 2020</p>
 
                 </div>
 

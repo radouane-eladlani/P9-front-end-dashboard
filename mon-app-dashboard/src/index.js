@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import PageAccueil from './page/PageAccueil';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter  } from 'react-router-dom';
 
 
+// reactDOM permet de lancer l'application 
+// Crée un point d'entrée dans le DOM avec ReactDOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//root.render prend le composant PageAccueil et l'injecte dans l'élément spécifié dans le DOM
 root.render(
-  <React.StrictMode>
-    <PageAccueil />
+  <React.StrictMode>{/* Utilisation de StrictMode pour les vérifications et avertissements supplémentaires */}
+    <BrowserRouter>
+      <PageAccueil />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

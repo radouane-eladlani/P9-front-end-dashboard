@@ -55,4 +55,8 @@
 .erreur{
     left: 150px;
     margin-top: 20px;
-    position: absolute;}
+    position: absolute;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Nutrition.css";
 
+// la function Proteines permet de retourner le composant avec le style
 function Proteines({ proteines }) {
     return (
         <div className="bgroundNutrition">
@@ -10,16 +11,16 @@ function Proteines({ proteines }) {
             </div>
             <div className="flexBoxNutrition">
                 <div className="flexBoxSpan">
-                    <span>{proteines.toLocaleString()}g</span>
+                    <span>{proteines}g</span>
                     <p>Proteines</p>
                 </div>
             </div>
         </div>
     );
 }
-
+// proteines.propTypes permet de valider que la propriété 'proteines' est un nombre
 Proteines.propTypes = {
-    proteines: PropTypes.number.isRequired
+    proteines: PropTypes.number.isRequired // La propriété 'proteines' doit être un nombre et est requise
 };
 
 export default Proteines;

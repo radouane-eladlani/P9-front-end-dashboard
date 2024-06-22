@@ -10,33 +10,42 @@ import Glucides from "./data/Glucides";
 import Lipides from "./data/Lipides";
 import useFetch from "../utils/useFetch";
 import UserModel from "../model/UserModel";
+import { useParams } from "react-router-dom";
+import ErreurPage from "../page/ErrorPage";
+
 
 function Contenu() {
-    const [userData, setUserData] = useState(null);
-    const { data, loading, error } = useFetch('http://localhost:3001/user/12');
+    const { id } = useParams(); //On récupère l'ID de l'utilisateur depuis l'URL
+    const [userData, setUserData] = useState(); // État pour stocker les données utilisateur
+    // Utilisation du hook useFetch pour récupérer les données utilisateur
+    const { data, loading, error } = useFetch(`http://localhost:3001/user/${id}`);
 
+    // useEffect pour mettre à jour les données utilisateur lorsque les données changent
     useEffect(() => {
         if (data) {
-            
-            setUserData(new UserModel(data));
+            setUserData(new UserModel(data)); // recuperer les données 
         }
-    }, [data]);
+    }, [data]); // Mise à jour de l'état lorsque les données changent
 
+    // Affiche un message de chargement si les données sont en cours de récupération
     if (loading) {
         return <div>Chargement...</div>;
     }
 
+    // Affiche un message d'erreur si une erreur survient lors de la récupération des données
     if (error) {
-        return <div className="erreur">Erreur : {error}</div>;
+        return <div className="erreur">{<ErreurPage/>}</div>;
     }
 
+    //Si userData est disponible, on initialise les variables avec les données correspondantes,
+    // sinon on utilise des valeurs par défaut (chaîne vide pour le prénom, 0 pour les compteurs)
     const firstName = userData ? userData.firstName : "";
     const calories = userData ? userData.calorieCount : 0;
     const proteines = userData ? userData.proteinCount : 0;
     const glucides = userData ? userData.carbohydrateCount : 0;
     const lipides = userData ? userData.lipidCount : 0;
 
-
+    // Retournes les composant avec le style 
     return (
         <>
             <div className="titre">
@@ -49,13 +58,15 @@ function Contenu() {
                         <Activite />
                     </div>
                     <div className="flexbox">
-                        <SessionSport />
-                        <RadarPerform />
-                        <ScoreObjectif />
+                        <SessionSport userId={id} />
+                        <RadarPerform userId={id} />
+                        <ScoreObjectif userId={id} />
                     </div>
                 </div>
                 <div className="flexbox2">
-                <Calories calories={calories} />
+                    {/* Affiche les composants Calories, Proteines, Glucides et Lipides avec 
+                    les donnees */}
+                    <Calories calories={calories} />
                     <Proteines proteines={proteines} />
                     <Glucides glucides={glucides} />
                     <Lipides lipides={lipides} />
@@ -65,4 +76,4 @@ function Contenu() {
     );
 }
 
-export default Contenu;
+export default Contenu; 
